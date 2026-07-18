@@ -19,9 +19,8 @@ define( 'AVS_VERSION', '2.0.0-alpha' );
 define( 'AVS_PATH', plugin_dir_path( __FILE__ ) );
 define( 'AVS_URL', plugin_dir_url( __FILE__ ) );
 define( 'AVS_FILE', __FILE__ );
-require_once AVS_PATH . 'admin/class-admin.php';
 require_once AVS_PATH . 'admin/class-settings.php';
+require_once AVS_PATH . 'admin/class-admin.php';
 
-
-new AVS_Admin();
 new AVS_Settings();
+new AVS_Admin();
